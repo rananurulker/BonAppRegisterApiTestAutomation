@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = {"stepDefinitions","Hooks"},
-        tags = "@NegativeRegister",
+        tags = "@PositiveFlow",
         dryRun =false
 )
 

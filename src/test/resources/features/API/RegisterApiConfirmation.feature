@@ -7,7 +7,7 @@ Feature: BonApp API Registration and Management
 
   Scenario: User Registration
     Given I generate a random email address
-    When I send a POST request to "/api/account/register" with the valid data
+    When I send a POST request to register endpoint with the valid data
     Then the response status code should be 200
 
   Scenario: Confirm email by using userID and code
@@ -18,7 +18,6 @@ Feature: BonApp API Registration and Management
   Scenario: Resend Confirmation Email
     When I send a POST request to "/api/account/sendConfirmationEmail" for resending confirmation email
     Then the response status code should be 200
-
 
   Scenario: Forgot Password Request
     When I send a POST request to "/api/account/changePasswordRequest" for password change
