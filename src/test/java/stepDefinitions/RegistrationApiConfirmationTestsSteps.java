@@ -151,9 +151,9 @@ public class RegistrationApiConfirmationTestsSteps {
 
     @When("I send a POST request to {string} with the reset code")
     public void iSendAPOSTRequestToWithTheResetCode(String changePassword) throws InterruptedException {
-        Thread.sleep(5000);
 
         Thread.sleep(5000);
+
         response = given()
                 .header("Authorization", mailAuthToken)
                 .when()
